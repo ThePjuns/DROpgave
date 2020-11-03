@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DROpgave", "DROpgave\DROpgave.csproj", "{0E576726-951D-4EE1-B318-C6BF6BB6DB86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryMusik", "ClassLibraryMusik\ClassLibraryMusik.csproj", "{ACE4528A-A6B4-4CB9-AE1C-ABC7577F1D02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E576726-951D-4EE1-B318-C6BF6BB6DB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E576726-951D-4EE1-B318-C6BF6BB6DB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E576726-951D-4EE1-B318-C6BF6BB6DB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E576726-951D-4EE1-B318-C6BF6BB6DB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE4528A-A6B4-4CB9-AE1C-ABC7577F1D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE4528A-A6B4-4CB9-AE1C-ABC7577F1D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE4528A-A6B4-4CB9-AE1C-ABC7577F1D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE4528A-A6B4-4CB9-AE1C-ABC7577F1D02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01CB4CE9-474F-4E74-B33A-51E11ABA0539}
+	EndGlobalSection
+EndGlobal
