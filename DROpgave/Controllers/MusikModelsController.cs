@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ClassLibraryMusik;
 using DROpgave;
+using Microsoft.AspNetCore.Cors;
 
 namespace DROpgave.Controllers
 {
@@ -22,6 +23,7 @@ namespace DROpgave.Controllers
         }
 
         // GET: api/MusikModels
+        [EnableCors("AllowGetPost")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MusikModel>>> GetMusiks()
         {
@@ -29,6 +31,7 @@ namespace DROpgave.Controllers
         }
 
         // GET: api/MusikModels/5
+        [EnableCors("AllowGetPost")]
         [HttpGet("{id}")]
         public async Task<ActionResult<MusikModel>> GetMusikModel(int id)
         {
@@ -57,6 +60,14 @@ namespace DROpgave.Controllers
 
             try
             {
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            {
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -77,6 +88,7 @@ namespace DROpgave.Controllers
         // POST: api/MusikModels
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        [EnableCors("AllowGetPost")]
         [HttpPost]
         public async Task<ActionResult<MusikModel>> PostMusikModel(MusikModel musikModel)
         {
@@ -106,5 +118,9 @@ namespace DROpgave.Controllers
         {
             return _context.Musiks.Any(e => e.id == id);
         }
+
+
+
+
     }
 }

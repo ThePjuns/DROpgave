@@ -37,5 +37,7 @@ namespace ClassLibraryMusik
         {
             return $"title: {title}, artist: {artist}, duration: {duration}, yearOfPublication: {yearOfPublication}, genre: {genre}, id: {id}";
         }
+
+
     }
 }
